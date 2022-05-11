@@ -16,7 +16,6 @@ body {
         linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
         url('../image/background.jpg') center/cover no-repeat fixed,
         #2a2438;
-        position: relative;
 }
 #ratingHeader .navbar-toggler {
     color: #ffffff;
