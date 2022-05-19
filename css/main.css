@@ -1,5 +1,9 @@
+.selector-for-some-widget {
+    box-sizing: border-box;
+}
+
 @font-face {
-    font-family:'Vazirmatn-FD-Regular';
+    font-family: 'Vazirmatn-FD-Regular';
     src: url(../fonts/Vazirmatn-FD-Regular.woff2);
 }
 
@@ -9,14 +13,16 @@ body {
 }
 
 #ratingHeader {
-    width: 100%;
+    width: 98%;
     height: 30rem;
-    margin-bottom: 0;
+    margin: 15px 15px 15px 15px;
+    border-radius: 15px;
     background:
         linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
         url('../image/background.jpg') center/cover no-repeat fixed,
         #2a2438;
 }
+
 #ratingHeader .navbar-toggler {
     color: #ffffff;
 }
@@ -24,8 +30,8 @@ body {
 #ratingHeader .navbar-nav a#home {
     color: #dfa25f;
 }
+
 #ratingHeader .navbar-nav .nav-link {
     font-weight: 500;
     color: #ffffff;
 }
-
