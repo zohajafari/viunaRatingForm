@@ -35,3 +35,8 @@ body {
     font-weight: 500;
     color: #ffffff;
 }
+
+.col-md-8{
+    border-radius: 15px;
+    background-color: #dfa25f;
+}
