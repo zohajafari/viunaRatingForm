@@ -24,10 +24,6 @@ body {
     width: 98%;
     height: 10rem;
     margin: 15px 15px 15px 15px;
-    /* background:
-        linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
-        url('../image/background.jpg') center/cover no-repeat fixed,
-        #2a2438; */
 }
 
 #ratingHeader .navbar-toggler {
