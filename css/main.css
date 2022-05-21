@@ -36,7 +36,10 @@ body {
     color: #ffffff;
 }
 
-.col-md-8{
+.col-md-8 {
     border-radius: 15px;
+}
+
+.btn {
     background-color: #dfa25f;
 }
