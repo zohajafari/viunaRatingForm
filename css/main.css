@@ -12,15 +12,22 @@ body {
     direction: rtl;
 }
 
+#carouselExampleControls {
+    height: 10rem;
+  
+    
+}
+
 #ratingHeader {
+    position: absolute;
+    z-index: 999;
     width: 98%;
-    height: 30rem;
+    height: 10rem;
     margin: 15px 15px 15px 15px;
-    border-radius: 15px;
-    background:
+    /* background:
         linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
         url('../image/background.jpg') center/cover no-repeat fixed,
-        #2a2438;
+        #2a2438; */
 }
 
 #ratingHeader .navbar-toggler {
