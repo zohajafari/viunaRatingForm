@@ -12,18 +12,16 @@ body {
     direction: rtl;
 }
 
-#carouselExampleControls {
-    height: 10rem;
-  
-    
+.carousel-inner {
+    border-radius: 15px;
+  margin: 15px auto;
+    height: 30rem;
 }
 
 #ratingHeader {
     position: absolute;
     z-index: 999;
     width: 98%;
-    height: 10rem;
-    margin: 15px 15px 15px 15px;
 }
 
 #ratingHeader .navbar-toggler {
