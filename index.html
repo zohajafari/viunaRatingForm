@@ -53,46 +53,91 @@
         </div>
       </nav>
     </header>
-    <main class="ratingForm">
-      <select class="form-select" required aria-label="Default select example">
-        <option selected>انتخاب شعبه</option>
-        <option value="1">سون سنتر</option>
-        <option value="2">پارک ساید</option>
-        <option value="3">پلاتینیوم</option>
-        <option value="4">شمیران سنتر</option>
-        <option value="5">سیوان سنتر</option>
-        <option value="6">گپ- ویونا پلاس</option>
-        <option value="7">برج نگار</option>
-        <option value="8">فودکورت راه چوبی- اکسپرس</option>
-        <option value="9">باغ کتاب تهران- اکسپرس</option>
-        <option value="10">مرکز خرید اوپال</option>
-        <option value="11">  سعادت آباد</option>
-        <option value="12">مرکز خرید آرن</option>
-        <option value="13"> کوروش مال</option>
-        <option value="14">شهرک اکباتان (فاز ۱، بازارچه‌ی ۸)</option>
-        <option value="15">مرکز خرید پلاتین</option>
-        <option value="16"> بام کوروش مال</option>
-        <option value="17">فودکورت رویال تراس</option>
-        <option value="18">مرکز خرید پالادیوم</option>
-        <option value="19">مرکز خرید ارگ</option>
-        <option value="20">بازار قائم تجریش</option>
-        <option value="21"> موزه‌ سینما</option>
-        <option value="22">مرکز خرید روشا</option>
-        <option value="23">مرکز خرید گالریا</option>
-        <option value="24">سانا سنتر</option>
-        <option value="25">توچال- بام تهران</option>
-      </select>
-      <div class="container my-3">
-        <div class="row align-items-center gx-1 gy-3">
-          <div class="col-md-8">Column</div>
-          <div class="col-md-8">Column</div>
-          <div class="col-md-8">Column</div>
-          <div class="col-md-8">Column</div>
+    <main>
+      <section>
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./image/01.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./image/02.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./image/03.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      </div>
-      <div class="d-grid gap-2 col-4 my-3 mx-auto">
-        <button class="btn" type="submit" value="Submit">ثبت نظر</button>
-      </div>
+      </section>
+      <section>
+        <select
+          class="form-select"
+          required
+          aria-label="Default select example"
+        >
+          <option selected>انتخاب شعبه</option>
+          <option value="1">سون سنتر</option>
+          <option value="2">پارک ساید</option>
+          <option value="3">پلاتینیوم</option>
+          <option value="4">شمیران سنتر</option>
+          <option value="5">سیوان سنتر</option>
+          <option value="6">گپ- ویونا پلاس</option>
+          <option value="7">برج نگار</option>
+          <option value="8">فودکورت راه چوبی- اکسپرس</option>
+          <option value="9">باغ کتاب تهران- اکسپرس</option>
+          <option value="10">مرکز خرید اوپال</option>
+          <option value="11">سعادت آباد</option>
+          <option value="12">مرکز خرید آرن</option>
+          <option value="13">کوروش مال</option>
+          <option value="14">شهرک اکباتان (فاز ۱، بازارچه‌ی ۸)</option>
+          <option value="15">مرکز خرید پلاتین</option>
+          <option value="16">بام کوروش مال</option>
+          <option value="17">فودکورت رویال تراس</option>
+          <option value="18">مرکز خرید پالادیوم</option>
+          <option value="19">مرکز خرید ارگ</option>
+          <option value="20">بازار قائم تجریش</option>
+          <option value="21">موزه‌ سینما</option>
+          <option value="22">مرکز خرید روشا</option>
+          <option value="23">مرکز خرید گالریا</option>
+          <option value="24">سانا سنتر</option>
+          <option value="25">توچال- بام تهران</option>
+        </select>
+      </section>
+      <section>
+        <div class="container my-3">
+          <div class="row align-items-center gx-1 gy-3">
+            <div class="col-md-8">Column</div>
+            <div class="col-md-8">Column</div>
+            <div class="col-md-8">Column</div>
+            <div class="col-md-8">Column</div>
+          </div>
+        </div>
+        <div class="d-grid gap-2 col-4 my-3 mx-auto">
+          <button class="btn" type="submit" value="Submit">ثبت نظر</button>
+        </div>
+      </section>
     </main>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
