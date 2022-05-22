@@ -14,7 +14,7 @@ body {
 
 .carousel-inner {
     border-radius: 15px;
-  margin: 15px auto;
+    margin: 15px auto;
     height: 30rem;
 }
 
@@ -37,8 +37,17 @@ body {
     color: #ffffff;
 }
 
+.form-select {
+    width: 40%;
+}
+
+#form {
+   width: 60%;
+}
+
 .col-md-8 {
     border-radius: 15px;
+    background-color:khaki
 }
 
 .btn {
