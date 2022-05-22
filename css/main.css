@@ -39,7 +39,7 @@ body {
 
 .form-select {
     width: 40%;
-    border:1px solid khaki;
+    border:1px solid #dfa25f;
 }
 
 #form {
@@ -48,7 +48,7 @@ body {
 
 .col-md-8 {
     border-radius: 15px;
-    border:1px solid khaki;
+    border:1px solid #dfa25f;
     height: 125px;
 }
 
