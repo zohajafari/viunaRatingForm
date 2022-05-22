@@ -39,6 +39,7 @@ body {
 
 .form-select {
     width: 40%;
+    border:1px solid khaki;
 }
 
 #form {
@@ -47,9 +48,19 @@ body {
 
 .col-md-8 {
     border-radius: 15px;
-    background-color:khaki
+    border:1px solid khaki;
+    height: 125px;
 }
 
 .btn {
     background-color: #dfa25f;
+}
+
+.star {
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+}
+
+.star.selected, .star:hover {
+    color: #dfa25f;
 }
