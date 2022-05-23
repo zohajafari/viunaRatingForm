@@ -39,16 +39,16 @@ body {
 
 .form-select {
     width: 40%;
-    border:1px solid #dfa25f;
+    border: 1px solid #dfa25f;
 }
 
 #form {
-   width: 60%;
+    width: 60%;
 }
 
 .col-md-8 {
     border-radius: 15px;
-    border:1px solid #dfa25f;
+    border: 1px solid #dfa25f;
     height: 130px;
 }
 
@@ -59,7 +59,7 @@ body {
 .star {
     cursor: pointer;
     transition: all 100ms ease-in-out;
-    color: darkgray;
+    color: lightgray;
 }
 
 .star.selected, .star:hover {
@@ -72,6 +72,7 @@ p {
     display: flex;
     justify-content: center;
 }
+
 .vote {
     padding: 0.5rem;
     display: flex;
@@ -81,7 +82,7 @@ p {
 }
 
 #maincomments {
-height: 180px;
+    height: 180px;
 }
 
 textarea {
@@ -90,6 +91,22 @@ textarea {
     height: 120px;
     border-radius: 15px;
     outline: none;
+    padding: 1rem;
+    font-size: small;
+}
+
+.phoneNumber {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border: 0.1px solid lightgray;
+    width: 80%;
+    direction: ltr;
+    border-radius: 5px;
+    outline: none;
     padding: 0.5rem;
     font-size: small;
+    margin-top: 1.2rem;
 }
