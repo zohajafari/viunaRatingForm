@@ -19,6 +19,7 @@ body {
 .carousel-inner {
     border-radius: 15px;
     /* height: 30rem; */
+    filter: brightness(0.4)
 }
 
 #ratingHeader {
