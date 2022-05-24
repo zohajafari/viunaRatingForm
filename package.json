@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d dist"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -12,10 +12,10 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://zohajafari.github.io/viunaRatingForm",
   "bugs": {
     "url": "https://github.com/zohajafari/viunaRatingForm/issues"
   },
+  "homepage": "https://github.com/zohajafari/viunaRatingForm#readme",
   "dependencies": {
     "bootstrap": "^5.1.3",
     "gh-pages": "^4.0.0"
