@@ -1,0 +1,115 @@
+.selector-for-some-widget {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Vazirmatn-FD-Regular';
+    src: url(../fonts/Vazirmatn-FD-Regular.woff2);
+}
+
+body {
+    font: 'Vazirmatn-FD-Regular';
+    direction: rtl;
+}
+
+#carouselExampleControls {
+    padding: 1rem;
+}
+
+.carousel-inner {
+    border-radius: 15px;
+    /* height: 30rem; */
+    filter: brightness(0.4)
+}
+
+#ratingHeader {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+
+#ratingHeader .navbar-toggler {
+    color: #ffffff;
+}
+
+#ratingHeader .navbar-nav a#home {
+    color: #dfa25f;
+}
+
+#ratingHeader .navbar-nav .nav-link {
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.form-select {
+    width: 40%;
+    border: 1px solid #dfa25f;
+}
+
+#form {
+    width: 60%;
+}
+
+.col-md-8 {
+    border-radius: 15px;
+    border: 1px solid #dfa25f;
+    height: 130px;
+}
+
+.btn {
+    background-color: #dfa25f;
+}
+
+.star {
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+    color: lightgray;
+}
+
+.star.selected, .star:hover {
+    color: #dfa25f;
+}
+
+p {
+    padding: 1rem;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.vote {
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    font-size: 25px;
+}
+
+#maincomments {
+    height: 180px;
+}
+
+textarea {
+    border: none;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px;
+    outline: none;
+    padding: 1rem;
+    font-size: small;
+}
+
+.phoneNumber {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border: 0.1px solid lightgray;
+    width: 80%;
+    direction: ltr;
+    border-radius: 5px;
+    outline: none;
+    padding: 0.5rem;
+    font-size: small;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>feedback</title>
+  </head>
+  <body>
+    <header id="ratingHeader">
+      <nav class="navbar navbar-expand-lg bg-transparent navbar-light">
+        <div class="container my-3">
+          <a href="#" class="navbar-brand">
+            <img src="./logo/logo-header.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link" id="home">خانه</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">اخبار و تازه‌ها</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">درباره ما</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">ارتباط با ما</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">باشگاه مشتریان</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">فروشگاه آنلاین</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./image/01.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./image/02.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./image/03.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section>
+        <select
+          class="form-select d-grid gap-2 my-3 mx-auto"
+          required
+          aria-label="Default select example"
+        >
+          <option selected>انتخاب شعبه</option>
+          <option value="1">سون سنتر</option>
+          <option value="2">پارک ساید</option>
+          <option value="3">پلاتینیوم</option>
+          <option value="4">شمیران سنتر</option>
+          <option value="5">سیوان سنتر</option>
+          <option value="6">گپ- ویونا پلاس</option>
+          <option value="7">برج نگار</option>
+          <option value="8">فودکورت راه چوبی- اکسپرس</option>
+          <option value="9">باغ کتاب تهران- اکسپرس</option>
+          <option value="10">مرکز خرید اوپال</option>
+          <option value="11">سعادت آباد</option>
+          <option value="12">مرکز خرید آرن</option>
+          <option value="13">کوروش مال</option>
+          <option value="14">شهرک اکباتان (فاز ۱، بازارچه‌ی ۸)</option>
+          <option value="15">مرکز خرید پلاتین</option>
+          <option value="16">بام کوروش مال</option>
+          <option value="17">فودکورت رویال تراس</option>
+          <option value="18">مرکز خرید پالادیوم</option>
+          <option value="19">مرکز خرید ارگ</option>
+          <option value="20">بازار قائم تجریش</option>
+          <option value="21">موزه‌ سینما</option>
+          <option value="22">مرکز خرید روشا</option>
+          <option value="23">مرکز خرید گالریا</option>
+          <option value="24">سانا سنتر</option>
+          <option value="25">توچال- بام تهران</option>
+        </select>
+      </section>
+      <section>
+        <div id="form" class=".container d-grid gap-2 my-3 mx-auto">
+          <div class="row  d-flex justify-content-center gx-1 gy-3">
+            <div id="rating" class="col-md-8">
+              <p>چقدر از سفارش امروز راضی بودین؟</p>
+              <div class="vote">
+                <i id="5" class="bi bi-star star"></i>
+                <i id="4" class="bi bi-star star"></i>
+                <i id="3" class="bi bi-star star"></i>
+                <i id="2" class="bi bi-star star"></i>
+                <i id="1" class="bi bi-star star"></i>
+              </div>
+            </div>
+
+            <div id="maincomments" class="col-md-8">
+              <div class="comments">
+                <p>از پیشنهادات و انتقادات شما استقبال میکنیم!</p>
+                <div class="recommands">
+                  <textarea
+                    id="comments-recommands"
+                    class="recommand"
+                    name="recomms"
+                    rows="3"
+                    placeholder="کیفیت، قیمت، برخورد پرسنل و ..."
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <div class="phone">
+                <p>برای شرکت در قرعه‌کشی، برامون شماره تماس بذارید</p>
+
+                <div class="phoneNumber">
+                  <input
+                    type="tel"
+                    class="telephone"
+                    minlength="11"
+                    maxlength="14"
+                    placeholder="09..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-grid gap-2 col-4 my-3 mx-auto">
+          <button class="btn" type="submit" value="Submit">ثبت نظر</button>
+        </div>
+      </section>
+    </main>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
