@@ -45,6 +45,15 @@ body {
     color: #dfa25f;
 }
 
+h1 {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    color: #dfa25f;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
 .form-select {
     width: 40%;
     border: 1px solid #dfa25f;
