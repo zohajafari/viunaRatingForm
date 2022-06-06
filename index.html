@@ -3,15 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="./css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>feedback</title>
   </head>
   <body>
@@ -19,7 +17,7 @@
       <nav class="navbar navbar-expand-lg bg-transparent navbar-light">
         <div class="container my-3">
           <a href="#" class="navbar-brand">
-            <img src="./logo/logo-header.png" alt="" />
+            <img src="/assets/img/logo/logo-header.png" alt="" />
           </a>
           <button
             class="navbar-toggler"
@@ -62,13 +60,13 @@
         >
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="./image/01.jpg" class="d-block w-100" alt="..." />
+              <img src="/assets/img/01.jpg" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-              <img src="./image/02.jpg" class="d-block w-100" alt="..." />
+              <img src="/assets/img/02.jpg" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-              <img src="./image/03.jpg" class="d-block w-100" alt="..." />
+              <img src="/assets/img/03.jpg" class="d-block w-100" alt="..." />
             </div>
           </div>
           <button
@@ -92,12 +90,13 @@
         </div>
       </section>
       <section>
-        <div class="container  d-grid gap-2 my-3 mx-auto">
+        <div class="container d-grid gap-2 my-3 mx-auto">
           <h1>به صفحه نظرسنجی کافه ویونا خوش اومدین!</h1>
         </div>
       </section>
       <section>
         <select
+          id="branchId"
           class="form-select d-grid gap-2 my-3 mx-auto"
           required
           aria-label="Default select example"
@@ -133,7 +132,7 @@
       <section>
         <div id="form" class=".container d-grid gap-2 my-3 mx-auto">
           <div class="row d-flex justify-content-center gx-1 gy-3">
-            <div id="rating" class="col-md-8">
+            <!-- <div id="rating" class="col-md-8">
               <p>چقدر از سفارش امروز راضی بودین؟</p>
               <div class="vote">
                 <i id="5" class="bi bi-star star"></i>
@@ -142,8 +141,19 @@
                 <i id="2" class="bi bi-star star"></i>
                 <i id="1" class="bi bi-star star"></i>
               </div>
-            </div>
-
+            </div> -->
+            <label class="rating-label">
+              <strong>Rating</strong>
+              <input
+                id="rating"
+                class="rating"
+                max="5"
+                oninput="this.style.setProperty('--value', this.value)"
+                step="0.5"
+                type="range"
+                value="1"
+              />
+            </label>
             <div id="maincomments" class="col-md-8">
               <div class="comments">
                 <p>از پیشنهادات و انتقادات شما استقبال میکنیم!</p>
@@ -165,6 +175,7 @@
 
                 <div class="phoneNumber">
                   <input
+                    id="phoneNumber"
                     type="tel"
                     class="telephone"
                     minlength="11"
@@ -177,11 +188,18 @@
           </div>
         </div>
         <div class="d-grid gap-2 col-4 my-3 mx-auto">
-          <button class="btn" type="submit" value="Submit">ثبت نظر</button>
+          <button
+            class="btn"
+            onclick="submitFeedback()"
+            type="submit"
+            value="Submit"
+          >
+            ثبت نظر
+          </button>
         </div>
       </section>
     </main>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
   </body>
 </html>
