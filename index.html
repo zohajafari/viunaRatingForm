@@ -132,28 +132,29 @@
       <section>
         <div id="form" class=".container d-grid gap-2 my-3 mx-auto">
           <div class="row d-flex justify-content-center gx-1 gy-3">
-            <!-- <div id="rating" class="col-md-8">
+            <div id="rating" class="col-md-8">
               <p>چقدر از سفارش امروز راضی بودین؟</p>
-              <div class="vote">
+              <label class="rating-label">
+                <!-- <strong>Rating</strong> -->
+                <input
+                  id="rating"
+                  class="rating"
+                  max="5"
+                  oninput="this.style.setProperty('--value', this.value)"
+                  step="0.5"
+                  type="range"
+                  value="1"
+                />
+              </label>
+              <!-- <div class="vote">
                 <i id="5" class="bi bi-star star"></i>
                 <i id="4" class="bi bi-star star"></i>
                 <i id="3" class="bi bi-star star"></i>
                 <i id="2" class="bi bi-star star"></i>
                 <i id="1" class="bi bi-star star"></i>
-              </div>
-            </div> -->
-            <label class="rating-label">
-              <strong>Rating</strong>
-              <input
-                id="rating"
-                class="rating"
-                max="5"
-                oninput="this.style.setProperty('--value', this.value)"
-                step="0.5"
-                type="range"
-                value="1"
-              />
-            </label>
+              </div> -->
+            </div>
+           
             <div id="maincomments" class="col-md-8">
               <div class="comments">
                 <p>از پیشنهادات و انتقادات شما استقبال میکنیم!</p>
