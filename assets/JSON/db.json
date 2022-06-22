@@ -1,0 +1,22 @@
+{
+    "reviews": [
+      {
+        "branch": 1,
+        "comments": "کیفیت خوب بود",
+        "phone": "09902783744",
+        "rating": 4
+      },
+      {
+        "branch": 4,
+        "comments": "قیمت بالا بود",
+        "phone": "09364525865",
+        "rating": 4.5
+      },
+      {
+        "branch": 16,
+        "comments": "قیمت بالا",
+        "phone": "09956482547",
+        "rating": 3.5
+      }
+    ]
+  }

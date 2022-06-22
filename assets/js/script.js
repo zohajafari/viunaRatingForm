@@ -23,12 +23,12 @@ function updateVote() {
 }
 
 function submitFeedback() {
-  const brachIdElement = document.getElementById("branchId");
+  const branchIdElement = document.getElementById("branchId");
   const ratingElement = document.getElementById("rating");
   const commentsElement = document.getElementById("comments-recommands");
   const phoneElement = document.getElementById("phoneNumber");
   const payload = {
-    branch: parseInt(brachIdElement.value),
+    branch: parseInt(branchIdElement.value),
     rating: parseFloat(ratingElement.value),
     comments: commentsElement.value,
     phone: phoneElement.value,
@@ -44,6 +44,7 @@ function submitFeedback() {
       console.log(error);
       alert("خطایی پیش آمده");
     });
+   
 }
 
 registerStarEventListeners();
